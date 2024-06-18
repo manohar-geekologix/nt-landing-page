@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'custom': '0px 5px 15px rgba(0, 0, 0, 0.15)',
+        'custom': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       },
       animation: {
         marquee: 'marquee 125s linear infinite',
         marquee2: 'marquee2 125s linear infinite',
+        blurIn: 'blurIn 0.3s forwards',
+        blurOut: 'blurOut 0.3s forwards',
       },
       keyframes: {
         marquee: {
@@ -22,6 +24,14 @@ module.exports = {
         marquee2: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        blurIn: {
+          '0%': { filter: 'blur(5px)' },
+          '100%': { filter: 'blur(0)' },
+        },
+        blurOut: {
+          '0%': { filter: 'blur(0)' },
+          '100%': { filter: 'blur(5px)' },
         },
       },
     },

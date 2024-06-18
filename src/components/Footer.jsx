@@ -4,19 +4,19 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-            <div className="px-20 py-20 mt-10 w-full min-h-[500px] max-md:px-5 bg-[url('/images/footerbanner.svg')] bg-no-repeat bg-cover">
-                <div className='container flex justify-center 2xl:justify-end items-center'>
+            <div className="md:px-20 md:py-20 pb-8 2xl:pb-0 w-full 2xl:min-h-[450px] max-md:px-5 2xl:bg-[url('/images/footerbanner.svg')] bg-[url('/images/mobfooterbanner.svg')] bg-no-repeat bg-cover">
+                <div className='container !bg-transparent flex justify-center 2xl:justify-end items-center'>
                     <div className="flex flex-col items-center justify-center 2xl:w-[50%] 2xl:pr-60">
-                        <div className="mt-8 text-3xl lg:text-5xl font-light text-center text-zinc-800">
+                        <div className="mt-8 text-xl lg:text-[38px] font-light text-center text-zinc-800">
                             <span className="">Screening Like a Pro with</span>
                             <br />
-                            <span className="font-semibold block my-4">Nifty Trader</span>
+                            <span className="font-semibold block my-4 mt-0 md:mt-4">Nifty Trader</span>
                         </div>
-                        <div className="text-xl lg:text-2xl text-center text-neutral-400">
+                        <div className="text-md lg:text-xl text-center text-neutral-500 md:text-neutral-400">
                             Stop wasting time and start winning! Get access to Nifty Trader&apos;s Stock Screeners today!
                         </div>
                         <Link target='_blank' href={'https://www.niftytrader.in/primeplans'}>
-                            <div className="text-center px-16 py-5 mt-10 text-xl lg:text-3xl font-medium text-white bg-[#4399EB] rounded-lg max-md:px-6 max-md:mr-2.5 cursor-pointer hover:bg-white hover:text-[#4399EB] border-2 border-[#4399EB] duration-200">
+                            <div className="text-center px-14 py-3 md:py-4 mt-6 md:mt-10 text-md md:text-xl lg:text-2xl font-medium text-white bg-[#4399EB] rounded-lg max-md:px-6 max-md:mr-2.5 cursor-pointer hover:bg-white hover:text-[#4399EB] border-2 border-[#4399EB] duration-200">
                                 Start Free Trial Now
                             </div>
                         </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
                         />
                     </Link >
                 </div >
-                <Link href={'https://www.niftytrader.in'} target='_blank' className="text-xl font-semibold text-center text-white underline">
+                <Link href={'https://www.niftytrader.in'} target='_blank' className="text-xl font-medium text-center text-white underline">
                     www.niftytrader.in
                 </Link>
             </div >

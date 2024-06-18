@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .container {
-    @apply max-w-[1800px] mx-auto;
+    @apply max-w-[1800px] mx-auto bg-[#F8FBFF] md:bg-transparent;
 }
