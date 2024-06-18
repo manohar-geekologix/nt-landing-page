@@ -47,15 +47,15 @@ const Faq = () => {
             </div>
             <div className='mx-2 md:mx-5 lg:mx-32'>
                 {faqData.map((item, index) => (
-                    <div key={index} className='mb-2'>
+                    <div key={index} className='mb-2 bg-white'>
                         <div
                             onClick={() => toggleFaq(index)}
                             className={`flex flex-nowrap gap-3.5 items-center justify-between px-3 py-2 md:py-4 lg:py-6 mt-2 md:mt-4 w-full text-sm md:text-lg font-medium bg-white border-solid text-zinc-800 cursor-pointer`}
                         >
                             <div>{item.question}</div>
-                            <FaAngleUp className={`${openIndex === index ? 'rotate-0 transition-all duration-300 ease-in-out' : 'rotate-180 transition-all duration-300 ease-in-out'}`} />
+                            <FaAngleUp className={`${openIndex === index ? 'rotate-0 transition-all duration-500 ease-in-out' : 'rotate-180 transition-all duration-500 ease-in-out'}`} />
                         </div>
-                        <div className={`overflow-hidden transition-all duration-300 ease-in-out border-b border-[#333333] ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}>
+                        <div className={`overflow-hidden transition-all duration-500 ease-in-out border-b border-[#333333] ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}>
                             <div className='px-3 pb-4 lg:pb-5 w-full text-sm md:text-lg font-medium text-[#999999]'>
                                 {item.answer}
                             </div>

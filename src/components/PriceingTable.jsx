@@ -5,27 +5,39 @@ const PriceingTable = () => {
     const rightArrow = <Image alt='yes' src={'/icons/right-tick.svg'} width={20} height={20} />
     const crossArrow = <Image alt='no' src={'/icons/crossarrow.svg'} width={20} height={20} />
     const tdata = [
-        { feature: "Number of Users", basic: 1, pro: 3, business: 1 },
-        { feature: "Users Per Page", basic: '3 Pages', pro: '50 Pages', business: 'Unlimited' },
-        { feature: "Includes essential features to get started", basic: rightArrow, pro: rightArrow, business: rightArrow },
-        { feature: "More advanced features for increased productivity", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Designing & Development", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Customizable options to meet your specific needs", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Secure data storage", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Email Support", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "24/7 customer support", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Analytics and reporting", basic: crossArrow, pro: rightArrow, business: rightArrow },
-        { feature: "Account Management", basic: rightArrow, pro: rightArrow, business: rightArrow }
+        { feature: "Multi-device sync of data", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Option Charts", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Index Contributors", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Max Pain Chart (Stocks & Indices)", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Multi-strike Comparison", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Custom Alerts", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Trading View Chart (w Live Data)", basic: rightArrow, pro: rightArrow, business: rightArrow },
+        { feature: "WhatsApp Alerts", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Options Screener", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Live Market Screener", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Advanced Stock Screener", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Trending OI", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Live Analytics (Nifty 50, BN, FN & Sensex)", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "SAR notification alerts", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Live NSE Option Chain and Stock Quotes after Broker Connect", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "GPT Alerts after Broker Connect", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Download Max Pain & Option Chain", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Ads-free experience", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Trading Desk (coming soon)", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Intraday Backtesting (coming soon)", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "NT Signals (coming soon)", basic: crossArrow, pro: rightArrow, business: rightArrow },
+        { feature: "Option Simulator (Nifty, BN, FinNifty)", basic: crossArrow, pro: crossArrow, business: rightArrow },
     ];
+    
     return (
-        <div className='container py-10 md:py-16'>
+        <div className='container max-md:pt-10 pb-10 md:pb-16'>
             <div className="md:mt-16 md:mb-10 mb-5 text-5xl font-bold text-center text-zinc-800 max-md:text-4xl">
                 Pricing Plan
             </div>
             <div className="overflow-auto bg-white">
                 <table className='border-collapse border border-zinc-200 w-full'>
                     <thead>
-                        <th className='max-w-40 '>
+                        <th className='max-w-36'>
                             <td>
                                 <div className="px-2 lg:px-8 py-1 md:py-4 md:px-4 text-zinc-800 md:leading-7 font-medium text-lg">
                                     <div className="flex gap-4 text-zinc-800">
@@ -92,22 +104,22 @@ const PriceingTable = () => {
                     <tbody>
                         {tdata.map(i => (
                             <tr key={i.feature}>
-                                <td className='max-w-72  border border-zinc-200'>
+                                <td className='max-w-72 border border-zinc-200'>
                                     <div className="px-2 lg:px-8 py-1 md:py-4 md:px-4 text-zinc-800 md:leading-7 font-medium text-sm lg:text-lg">
                                         {i.feature}
                                     </div>
                                 </td>
-                                <td className='border border-zinc-200'>
+                                <td className='border border-zinc-200 lg:min-w-52 lg:max-w-52'>
                                     <div className="flex items-center justify-center">
                                         {i.basic}
                                     </div>
                                 </td>
-                                <td className='border border-zinc-200'>
+                                <td className='border border-zinc-200 lg:min-w-52 lg:max-w-52'>
                                     <div className="flex items-center justify-center">
                                         {i.pro}
                                     </div>
                                 </td>
-                                <td className='border border-zinc-200'>
+                                <td className='border border-zinc-200 lg:min-w-52 lg:max-w-52'>
                                     <div className="flex items-center justify-center">
                                         {i.business != 'Unlimited' ? i.business : (
                                             <div className='text-center'>

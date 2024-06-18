@@ -7,7 +7,7 @@ const MainBanner = dynamic(() => import('./MainBanner'))
 const SliderCard = dynamic(() => import('./SliderCard'));
 const PriceingTable = dynamic(() => import('./PriceingTable'), { ssr: false });
 
-function MyComponent() {
+function HomePage() {
     return (
         <>
             <MainBanner />
@@ -21,4 +21,4 @@ function MyComponent() {
     );
 }
 
-export default MyComponent
+export default HomePage

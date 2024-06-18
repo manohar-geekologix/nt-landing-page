@@ -48,19 +48,19 @@ const SliderCard = () => {
             <div className="relative z-0 bg-no-repeat md:bg-black flex justify-center items-center">
                 <Slider {...settings} className="relative z-0 overflow-hidden max-w-full">
                     <div className='px-0 md:px-4'>
-                        <Image width={800} height={460} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-scrn.png" alt="Legend 1" />
+                        <Image width={800} height={100} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-scrn.png" alt="Legend 1" />
                     </div>
                     <div className='px-0 md:px-4'>
-                        <Image width={800} height={460} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/livescrn.png" alt="Legend 2" />
+                        <Image width={800} height={100} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/livescrn.png" alt="Legend 2" />
                     </div>
                     <div className='px-0 md:px-4'>
-                        <Image width={800} height={460} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-chain.png" alt="Legend 3" />
+                        <Image width={800} height={100} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-chain.png" alt="Legend 3" />
                     </div>
                     <div className='px-0 md:px-4'>
-                        <Image width={800} height={460} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-sum.png" alt="Legend 3" />
+                        <Image width={800} height={100} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/opt-sum.png" alt="Legend 3" />
                     </div>
                     <div className='px-0 md:px-4'>
-                        <Image width={800} height={460} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/advscrn.png" alt="Legend 3" />
+                        <Image width={800} height={100} className='w-[800px] h-[230px] md:h-[470px]' src="/slider/screenshot/advscrn.png" alt="Legend 3" />
                     </div>
                 </Slider>
             </div>

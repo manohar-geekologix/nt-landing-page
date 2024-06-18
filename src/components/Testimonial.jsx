@@ -3,8 +3,8 @@ import Marquee from "react-fast-marquee";
 
 const testimonialData = [
     {
-        name: "Bhanvadiya Maheshbhai Narotambhai",
-        imageUrl: "images/users/user1.svg",
+        name: "Bhanvadiya Narotambhai",
+        imageUrl: "images/users/user3.svg",
         testimonial:
             "Superb app! You guys are great. Everything's at my fingertips now: option analysis, EMA, pivot points, company profiles, gaps up/down, FII & DII data, ban lists... What's not here?!   You keep nothing hidden. Thank you very much, guys! Thanks a lot!",
     },
@@ -14,20 +14,6 @@ const testimonialData = [
         testimonial: `The website and app are incredibly intuitive and easy to navigate. Whether you’re a seasoned trader or a beginner, you’ll find everything you need right at your fingertips.
          Overall, NiftyTrader has exceeded my expectations in every way.`,
     },
-    {
-        name: "Anjan Banerjee",
-        imageUrl: "images/users/user3.svg",
-        testimonial:
-            "This is the app I've been looking for for a long time. I couldn't find it anywhere else. It seems their understanding of user needs aligns perfectly with what I was exactly looking for. Thanks, guys, for making this possible!",
-    },
-    {
-        name: "Vishwanath Hegde",
-        imageUrl: "images/users/user4.svg",
-        testimonial:
-            "Very good app for intraday traders. Highly informative and easy to understand. Very good work done by the organization. Many many thanks. Request all traders to use this app.",
-    }
-]
-const testimonialData2 = [
     {
         name: "Gowtham Rajamani",
         imageUrl: "images/users/user1.svg",
@@ -40,6 +26,20 @@ const testimonialData2 = [
         testimonial:
             "Thanks team for providing such an awesome app! You provide voice to open interest data, we don't need to understand what it wants to tell us. It clearly says long buildups or short unwinds. You made options trading more profitable now, thanks again!",
     },
+]
+const testimonialData2 = [
+    {
+        name: "Anjan Banerjee",
+        imageUrl: "images/users/user4.svg",
+        testimonial:
+            "This is the app I've been looking for for a long time. I couldn't find it anywhere else. It seems their understanding of user needs aligns perfectly with what I was exactly looking for. Thanks, guys, for making this possible!",
+    },
+    {
+        name: "Vibha Hegde",
+        imageUrl: "images/users/user2.svg",
+        testimonial:
+            "Very good app for intraday traders. Highly informative and easy to understand. Very good work done by the organization. Many many thanks. Request all traders to use this app.",
+    },
     {
         name: "Meena Joshi",
         imageUrl: "images/users/user3.svg",
@@ -48,7 +48,7 @@ const testimonialData2 = [
     },
     {
         name: "Akshay Chaughule",
-        imageUrl: "images/users/user4.svg",
+        imageUrl: "images/users/user1.svg",
         testimonial:
             "One of the best apps... Because of this app, I made around 32k in 4 days in Nifty options. Awesome work, guys! This app allows you to easily predict the market trend by analyzing the option chain. Thanks for creating such a valuable app.",
     },

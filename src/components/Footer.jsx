@@ -4,10 +4,10 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-            <div className="md:px-20 md:py-20 pb-8 2xl:pb-0 w-full 2xl:min-h-[450px] max-md:px-5 2xl:bg-[url('/images/footerbanner.svg')] bg-[url('/images/mobfooterbanner.svg')] bg-no-repeat bg-cover">
+            <div className="md:px-20 md:py-20 pb-8 2xl:pb-0 w-full 2xl:min-h-[480px] max-md:px-5 2xl:bg-[url('/images/footerbanner.svg')] bg-[url('/images/mobfooterbanner.svg')] bg-no-repeat bg-cover max-md:bg-[#F8FBFF]">
                 <div className='container !bg-transparent flex justify-center 2xl:justify-end items-center'>
                     <div className="flex flex-col items-center justify-center 2xl:w-[50%] 2xl:pr-60">
-                        <div className="mt-8 text-xl lg:text-[38px] font-light text-center text-zinc-800">
+                        <div className="mt-8 text-2xl lg:text-[38px] font-light text-center text-zinc-800">
                             <span className="">Screening Like a Pro with</span>
                             <br />
                             <span className="font-semibold block my-4 mt-0 md:mt-4">Nifty Trader</span>
@@ -80,7 +80,7 @@ const Footer = () => {
                         />
                     </Link >
                 </div >
-                <Link href={'https://www.niftytrader.in'} target='_blank' className="text-xl font-medium text-center text-white underline">
+                <Link href={'https://www.niftytrader.in'} target='_blank' className="text-lg md:text-xl font-medium text-center text-white underline">
                     www.niftytrader.in
                 </Link>
             </div >
